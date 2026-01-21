@@ -1,0 +1,88 @@
+/* 1. RESET Y FUNDACIÓN (La base de la pirámide) */
+:root {
+    --oro-maxi: #D4AF37;
+    --negro-obsidiana: #0A0A0A;
+    --gris-aire: #F8F9FA; /* El blanco de Google */
+    --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: var(--negro-obsidiana);
+    background-color: white;
+    overflow-x: hidden;
+}
+
+/* 2. EL HEADER "FLOTANTE" (Elegancia pura) */
+header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%; /* Mucho aire a los lados */
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px); /* Efecto cristalino */
+    z-index: 1000;
+}
+
+#main-logo { height: 40px; transition: var(--transition); }
+
+/* 3. EL HERO (Donde ocurre la magia 2050) */
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* División 50/50 como Google */
+    align-items: center;
+    min-height: 90vh;
+    padding: 0 10%;
+    gap: 50px;
+}
+
+.hero-content h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem); /* Texto que se adapta solo */
+    font-weight: 800;
+    margin-bottom: 20px;
+    letter-spacing: -2px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #5f6368; /* El gris exacto de Google */
+    margin-bottom: 40px;
+    max-width: 500px;
+}
+
+/* 4. EL BOTÓN "ENTER THE EMPIRE" */
+.btn-primary {
+    background-color: var(--negro-obsidiana);
+    color: white;
+    padding: 16px 32px;
+    border-radius: 50px; /* Redondeado nivel lujo */
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-primary:hover {
+    background-color: var(--oro-maxi);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* 5. EL TRONO DEL DIAMANTE (Contenedor 3D) */
+#diamond-3d-container {
+    width: 100%;
+    height: 500px;
+    background: radial-gradient(circle, #f0f0f0 0%, #ffffff 100%);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
